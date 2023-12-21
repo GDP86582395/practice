@@ -22,9 +22,9 @@ public class ThreeSumClosest {
                     return target;
                 }
                 else if (sum > target){
-                    while (l < r && nums[r] == nums[--r]);
+                    r--;
                 }else {
-                    while (l < r && nums[l] == nums[++l]);
+                    l++;
                 }
             }
         }
